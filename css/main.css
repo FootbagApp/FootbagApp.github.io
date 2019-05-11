@@ -1,0 +1,205 @@
+body,html{
+	height:100%;
+	font-family: "Avant Garde", Avantgarde, sans-serif;
+	background-color: #FFFFFF;
+	color:#000000;
+}
+body{
+	background:url(../images/footbag-app-logo-outline.svg) no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+::selection {
+  background: #999999; /* WebKit/Blink Browsers */
+  color: #FFFFFF;
+}
+::-moz-selection {
+  background: #999999; /* Gecko Browsers */
+  color: #FFFFFF;
+  }
+.wrapper{
+	width:910px;
+	height:200px;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	z-index:999;
+}
+.wrapper .left{
+	width:350px;
+	margin-top:-80px;
+	float:left;
+}
+.wrapper .right{
+	width:560px;
+	height:100%;
+	float:right;
+}
+.wrapper .right h1{
+	font-size: 90px;
+	font-weight: 900;
+	line-height:0.8em;
+	letter-spacing: -5px;
+	margin:0;
+	padding:0px 0px 20px 4px;
+	color:RGBA(0,0,0,1);
+}
+.wrapper .right p{
+	font-size:1.5em;
+	margin:0;
+	padding:0px 0px 0px 8px;
+	color:RGBA(0,0,0,.66);
+	line-height:1.5;
+}
+.wrapper .right p a{
+	text-decoration:none;
+	color:RGBA(0,0,0,1);
+	padding:0 3px 3px;
+	border:1px dotted RGBA(0,0,0,.2);
+}
+
+.wrapper .right p a:hover{
+	background-color:RGBA(0,0,0,.1);
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+}
+
+.wrapper .logo{
+	margin:10px 0;
+	width:300px;
+	height:300px;
+	background:url(../images/footbag-app-logo.svg) no-repeat;
+	background-size:cover;
+	background-position:center;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+.wrapper .logo:hover{
+	cursor: crosshair;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width:600px) {
+
+	body{
+		overflow:hidden;
+	}
+
+	#bgcanvas{
+		height:100%;
+		width:100%;
+	}
+	.wrapper{
+		margin:auto;
+		width:100%;
+		width: 350px;
+		position:absolute;
+		height:180px;
+		z-index:999;
+	}
+
+	.wrapper .left{
+		width:100%;
+		height:200px;
+	}
+	.wrapper .right{
+		margin:0 18px;
+		width:auto;
+		clear:both;
+	}
+	.wrapper .right h1{
+		text-align: center;
+		width:100%;
+		font-size:50px;
+		letter-spacing: -2px;
+		margin-bottom:8px;
+	}
+	.wrapper .right p{
+		text-align: center;
+		width:100%;
+		margin:0;
+		padding:0;
+		color:RGBA(0,0,0,.8);
+		line-height:1.8;
+		font-size:13px;
+	}
+	.wrapper .right p a{
+		padding:-1px 3px 2px 3px;
+	}
+
+	.wrapper .logo{
+		width:200px;
+		height:200px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:-30px;
+	}
+}
+
+@media screen and (max-width:1024px) and (min-width:601px) {
+
+	body{
+		overflow:hidden;
+	}
+
+	#bgcanvas{
+		height:100%;
+		width:100%;
+	}
+	.wrapper{
+	width:600px;
+	height:180px;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	z-index:999;
+	}
+	.wrapper .left{
+		width:140px;
+		height:140px;
+		margin-top:0px;
+		margin-left: 50px;
+		float:left;
+	}
+	.wrapper .right{
+		width:385px;
+		height:180px;
+		margin-top:34px;
+		margin-left: 5px;
+		float:right;
+	}
+	.wrapper .right h1{
+		font-size:40px;
+		letter-spacing: -3px;
+		font-weight: 900;
+		margin:0;
+		padding:0px 0px 10px 6px;
+	}
+	.wrapper .right p{
+		font-size:1em;
+		margin:0;
+		padding:0px 0px 0px 8px;
+		color:RGBA(0,0,0,.66);
+		line-height:1.5;
+	}
+	.wrapper .right p a{
+		text-decoration:none;
+		color:RGBA(0,0,0,1);
+		padding:0 3px 3px;
+		border:1px dotted RGBA(255,255,255,.2);
+	}
+
+	.wrapper .logo{
+		width:140px;
+		height:140px;
+	}
+}

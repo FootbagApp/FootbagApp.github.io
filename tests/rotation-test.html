@@ -1,0 +1,24 @@
+<svg width="500" height="500">
+  <style>
+    rect {
+      -moz-transform-origin: 75px 75px;
+      transform-origin: 50% 50%;
+    }
+  </style>
+  <rect id="deepPink-rectangle" width="50" height="50" x="50" y="50" fill="deepPink" />
+  
+  <animateTransform 
+           xlink:href="#deepPink-rectangle"
+           attributeName="transform" 
+           attributeType="XML"
+           type="rotate"
+           from="0 75 75"
+           to="360 75 75" 
+           dur="2s"
+           begin="0s; 5s; 9s; 17s;"
+           end="2s; 8s; 15s; 25s;"
+           fill="freeze" 
+           restart="whenNotActive"
+           />
+  
+</svg>
